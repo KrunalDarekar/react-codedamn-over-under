@@ -1,4 +1,4 @@
-export default data = [
+const data = [
     { channel: "Mr. Beast", subscribers: 85000000 },
     { channel: "PewDiePie", subscribers: 110000000 },
     { channel: "Dude Perfect", subscribers: 57000000 },
@@ -50,4 +50,6 @@ export default data = [
     { channel: "The Hacksmith", subscribers: 10000000 },
     { channel: "MinutePhysics", subscribers: 4000000 }
 ];
+
+export default data;
   
