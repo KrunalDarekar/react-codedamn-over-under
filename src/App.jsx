@@ -6,6 +6,8 @@ function App() {
 	const channels = data;
 	const [currentChannel, setCurrentChannel] = useState({});
 
+
+	//do not change the return statements for it is there for evaluation purpose
 	return (
 		<>
 		<div>{currentChannel.channel}</div>
