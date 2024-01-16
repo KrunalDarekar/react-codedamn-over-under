@@ -3,7 +3,7 @@ import "./App.css";
 import data from "./assets/data";
 
 function App() {
-	const [channels, setChannels] = useState(data);
+	const channels = data;
 	const [currentChannel, setCurrentChannel] = useState({});
   	const [nextChannel, setNextChannel] = useState({});
 	const [points, setPoints] = useState(0);
@@ -59,18 +59,18 @@ function App() {
 
 	return (
 		<div>
-		<h1>Guess the Subscriber Count</h1>
-		<div>
-			<p>{`Channel: ${currentChannel.channel}, Subscribers: ${(currentChannel.subscribers)/1000000} million`}</p>
-			<p>VS</p>
-			<p>{`Channel: ${nextChannel.channel}`}</p>
-		</div>
-		<div className="buttons">
-			<button onClick={() => handleGuess('over')}>Over</button>
-			<button onClick={() => handleGuess('under')}>Under</button>
-		</div>
-		<div>{gameMsg}</div>
-		<div>score: {points}</div>
+			<h1>Guess the Subscriber Count</h1>
+			<div>
+				<p>{`Channel: ${currentChannel.channel}, Subscribers: ${(currentChannel.subscribers)/1000000} million`}</p>
+				<p>VS</p>
+				<p>{`Channel: ${nextChannel.channel}`}</p>
+			</div>
+			<div className="buttons">
+				<button onClick={() => handleGuess('over')}>Over</button>
+				<button onClick={() => handleGuess('under')}>Under</button>
+			</div>
+			<div>{gameMsg}</div>
+			<div>score: {points}</div>	
 		</div>
 	);
 }
